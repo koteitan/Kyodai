@@ -116,8 +116,10 @@ next10000.onclick = function () {
 }
 
 clear.onclick = function () {
-  result.innerHTML = '';
-  tsuika = [];
-  tsuika.push('<p>' + (turn-0-1) + hydra + '</p>');
-  result.insertAdjacentHTML('beforeend', tsuika.join(''));
+  if (hydra != "8"){
+    result.innerHTML = '';
+    tsuika = [];
+    tsuika.push('<p>' + (turn-0-1) + hydra + '</p>');
+    result.insertAdjacentHTML('beforeend', tsuika.join(''));
+  }
 }
